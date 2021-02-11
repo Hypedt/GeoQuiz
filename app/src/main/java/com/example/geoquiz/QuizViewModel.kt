@@ -19,7 +19,7 @@ class QuizViewModel : ViewModel() {
         Question(R.string.question_7, false),
         Question(R.string.question_8, true),
         Question(R.string.question_9, true),
-        Question(R.string.question_10, true),
+        Question(R.string.question_10, true)
     )
 
     val currentQuestionAnswer: Boolean
@@ -31,4 +31,15 @@ class QuizViewModel : ViewModel() {
     fun moveToNext() {
         currentIndex = (currentIndex + 1) % questionBank.size
     }
+
+    fun moveToPrevious(){
+        if (currentIndex == 0){
+            currentIndex = 9
+        }
+        else{
+            currentIndex = (currentIndex - 1) % questionBank.size
+        }
+    }
+
+
 }

@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:padding="24dp"
-        tools:text="@string/question_australia"/>
+        tools:text="@string/question_1"/>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -25,13 +25,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/false_button" />
+
     </LinearLayout>
     <Button
-        android:id="@+id/cheat_button"
+        android:id="@+id/previous_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|center_horizontal"
-        android:text="@string/cheat_button" />
+        android:layout_gravity="bottom|left"
+        android:text="@string/previous_button"
+        android:drawableLeft="@drawable/arrow_left"
+        android:drawablePadding="4dp" />
     <Button
         android:id="@+id/next_button"
         android:layout_width="wrap_content"
@@ -41,4 +44,11 @@
         android:drawableEnd="@drawable/arrow_right"
         android:drawablePadding="4dp"
         android:drawableRight="@drawable/arrow_right" />
+
+    <Button
+    android:id="@+id/cheat_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|center_horizontal"
+    android:text="@string/cheat_button" />
 </FrameLayout>
