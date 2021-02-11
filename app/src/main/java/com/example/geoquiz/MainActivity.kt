@@ -16,6 +16,7 @@ import androidx.lifecycle.ViewModelProviders
 private const val TAG = "MainActivity"
 private const val KEY_INDEX = "index"
 private const val REQUEST_CODE_CHEAT = 0
+private const val IS_CHEATER = "isCheater"
 
 class MainActivity : AppCompatActivity() {
 
@@ -38,6 +39,8 @@ class MainActivity : AppCompatActivity() {
         val currentIndex = savedInstanceState?.getInt(KEY_INDEX, 0) ?: 0
         quizViewModel.currentIndex = currentIndex
 
+        quizViewModel.isCheater = savedInstanceState?.getBoolean(IS_CHEATER,false)?:false
+
         trueButton = findViewById(R.id.true_button)
         falseButton = findViewById(R.id.false_button)
         nextButton = findViewById(R.id.next_button)
@@ -54,6 +57,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         nextButton.setOnClickListener {
+            quizViewModel.isCheater=false
             quizViewModel.moveToNext()
             updateQuestion()
         }
@@ -105,6 +109,7 @@ class MainActivity : AppCompatActivity() {
         super.onSaveInstanceState(savedInstanceState)
         Log.i(TAG, "onSaveInstanceState")
         savedInstanceState.putInt(KEY_INDEX,  quizViewModel.currentIndex)
+        savedInstanceState.putBoolean(IS_CHEATER,quizViewModel.isCheater)
     }
 
     override fun onStop() {
