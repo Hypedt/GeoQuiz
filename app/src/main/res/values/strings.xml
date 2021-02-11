@@ -1,15 +1,15 @@
 <resources>
     <string name="app_name">GeoQuiz</string>
-    <string name="question_australia">Canberra is the capital of Australia.</string>
-    <string name="question_oceans">The Pacific Ocean is larger than
-  the Atlantic Ocean.</string>
-    <string name="question_mideast">The Suez Canal connects the Red Sea
-  and the Indian Ocean.</string>
-    <string name="question_africa">The source of the Nile River is in Egypt.</string>
-    <string name="question_americas">The Amazon River is the longest river
-  in the Americas.</string>
-    <string name="question_asia">Lake Baikal is the world\'s oldest and deepest
-  freshwater lake.</string>
+  <string name="question_1">Mexico is south of the Equator</string>
+  <string name="question_2">New Zealand has more sheep than people</string>
+  <string name="question_3">There is a country that begins with every letter of the alphabet</string>
+  <string name="question_4">China only has one time zone</string>
+  <string name="question_5">Africa has a larger area than Russia</string>
+  <string name="question_6">Switzerland is part of the European Union</string>
+  <string name="question_7">No countries share a land border with the United Kingdom</string>
+  <string name="question_8">Minnesota borders the Great Lakes</string>
+  <string name="question_9">100% of the territory of Singapore is located on islands</string>
+  <string name="question_10">Russia borders both North Korea and Norway</string>
     <string name="true_button">True</string>
     <string name="false_button">False</string>
     <string name="correct_toast">Correct!</string>
